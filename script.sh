@@ -75,7 +75,7 @@ make install-gcc
 cd ..
 
 if [ $USE_NEWLIB -ne 0 ]; then
-    # Steps 4-6: Newlib
+    # In case of new library the Steps 4-6 is followed: Newlib
     mkdir -p build-newlib
     cd build-newlib
     ../newlib-master/configure --prefix=$INSTALL_PATH --target=$TARGET $CONFIGURATION_OPTIONS
